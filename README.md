@@ -11,3 +11,6 @@ Then leant some basic knowledge about [SUMO (learn here)](https://github.com/Day
 
 
 ## Run Veins:
+
+` ./sumo-launchd.py -vv c sumo
+`
