@@ -31,3 +31,4 @@ The step 4 and Final step are worth to read them, but you don't need to follow t
 ```
 sumo-launchd.py -vv -c sumo
 ```
+Now sumo is listening on port 9999. So next is run code on OmNet++. In the OMNeT++ 5 IDE, simulate the Veins demo scenario by right-clicking on veins-\*\*/examples/veins/omnetpp.ini and choosing Run As > OMNeT++ simulation. 
