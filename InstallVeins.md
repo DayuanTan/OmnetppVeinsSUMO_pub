@@ -42,4 +42,4 @@ sumo-launchd.py -vv -c sumo
 ```
 Now sumo is listening on port 9999. So next is run code on OmNet++. In the OMNeT++ 5 IDE, simulate the Veins demo scenario by right-clicking on **veins-\*\*/examples/veins/omnetpp.ini** and choosing **Run As > OMNeT++ simulation**. 
 
-It's an example about a series of vehicles get interrupted by an accident. 
+It's an example about a series of vehicles get interrupted by an accident. Cars get in from right and want to go out of the campus of Univ of Erlangen. Also check veins-\*\*/examples/veins/erlangen.png to see the complete map. 
