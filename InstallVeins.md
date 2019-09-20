@@ -25,7 +25,7 @@ Follow the step 3 on [this page](https://veins.car2x.org/tutorial/). Download th
 
 The step 4 and Final step are worth to read them, but you don't need to follow them. 
 
-## To run it
+## To run the Veins example program:
 
 1. In your terminal, go to the path of veins code (suggestion is under OmNet++ workspace directory), go to `veins-***/examples/veins`. Then you can see some SUMO congifuration files. like:
 - erlangen.sumo.cfg
