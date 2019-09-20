@@ -13,5 +13,5 @@ I don't think the official install instruction is good, readable. It's kind of c
 
 ## Run Veins:
 
-` ./sumo-launchd.py -vv -c sumo
-`
+` ./sumo-launchd.py -vv -c sumo` (Refer to [complete steps.](InstallVeins.md))
+
