@@ -27,7 +27,16 @@ The step 4 and Final step are worth to read them, but you don't need to follow t
 
 ## To run it
 
-1. In your terminal, go to the path of veins code (suggestion is under OmNet++ workspace directory), find the file `veins-***/sumo-launchd.py`, then run
+1. In your terminal, go to the path of veins code (suggestion is under OmNet++ workspace directory), go to `veins-***/examples/veins`. Then you can see some SUMO congifuration files. like:
+- erlangen.sumo.cfg
+- erlangen.rou.cfg //route-files
+- erlangen.net.cfg //net-file
+- erlangen.poly.xml //additional-files
+
+Then run `sumo-gui -c erlangen.sumo.cfg`, you can see how it works in SUMO. A simulation time step counter running from 0 to 1000 and disappearing again. Then a windows will pop up, saying "simulation ended. Reason: the final simulation step has been reached."
+
+
+2. Find the file `veins-***/sumo-launchd.py`, then run
 ```
 sumo-launchd.py -vv -c sumo
 ```
