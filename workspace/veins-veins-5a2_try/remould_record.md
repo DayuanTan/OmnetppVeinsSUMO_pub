@@ -48,7 +48,7 @@ Launch a debugger with the following command?
 
 nemiver --attach=15907 &
 ```
-Check it carefully I found node 26 went outside of the map so I commented vehicle 26 (depart at 78.0) in route file.
+Check it carefully I found some nodes went outside of the map so I changed omnetpp.ini file to make the playground bigger (from 2500x2500x50 to 2600x2500x50).
 
 <!--<vehicle id="24" depart="72.00">
         <route edges="-8403007 -29900564#1 -8402998#2 -8402998#1 -8402997 32270595 33174302#0 33174302#1 4686970#0 4686970#1 122161381 30350448 8364476 30350450#0 30350450#1 30350450#2 4006702#0 31255203#0 31255203#1 -31255203#1"/>
