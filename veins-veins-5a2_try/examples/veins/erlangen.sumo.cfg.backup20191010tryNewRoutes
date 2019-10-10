@@ -32,16 +32,10 @@
 -->
 
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
-<!-- 20191010 try new routes
+
     <input>
         <net-file value="erlangen.net.xml"/>
         <route-files value="erlangen.rou.xml"/>
-        <additional-files value="erlangen.poly.xml"/>
-    </input>
--->
-    <input>
-        <net-file value="erlangen.net.xml"/>
-        <route-files value="dayuan.erlangen.rou.xml"/>
         <additional-files value="erlangen.poly.xml"/>
     </input>
 
