@@ -1,11 +1,9 @@
-<?xml version="1.0"?>
-
-<!--
-// Copyright (C) 2011 Christoph Sommer <sommer@ccs-labs.org>
+//
+// Copyright (C) 2017 Christoph Sommer <sommer@ccs-labs.org>
 //
 // Documentation for these modules is at http://veins.car2x.org/
 //
-// SPDX-License-Identifier: (GPL-2.0-or-later OR CC-BY-SA-4.0)
+// SPDX-License-Identifier: GPL-2.0-or-later
 //
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -21,21 +19,14 @@
 // along with this program; if not, write to the Free Software
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 //
-// -
-//
-// At your option, you can also redistribute and/or modify this file
-// under a
-// Creative Commons Attribution-ShareAlike 4.0 International License.
-//
-// You should have received a copy of the license along with this
-// work.  If not, see <http://creativecommons.org/licenses/by-sa/4.0/>.
--->
 
-<!-- debug config -->
-<launch>
-    <copy file="erlangen.net.xml" />
-    <copy file="erlangen.rou.xml" />
-    <copy file="erlangen.poly.xml" />
-    <copy file="erlangen.sumo.cfg" type="config" />
-</launch>
+import org.car2x.veins.nodes.RSU;
+import org.car2x.veins.nodes.Scenario;
 
+network RSUExampleScenario extends Scenario
+{
+    submodules:
+        rsu[1]: RSU {
+            @display("p=150,140;i=veins/sign/yellowdiamond;is=vs");
+        }
+}

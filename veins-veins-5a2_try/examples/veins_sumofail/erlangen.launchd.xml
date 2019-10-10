@@ -32,10 +32,18 @@
 -->
 
 <!-- debug config -->
+<!-- original values:
 <launch>
     <copy file="erlangen.net.xml" />
     <copy file="erlangen.rou.xml" />
     <copy file="erlangen.poly.xml" />
     <copy file="erlangen.sumo.cfg" type="config" />
+</launch>
+-->
+<launch>
+    <copy file="b4atom.net.xml" />
+    <copy file="dua.rou.xml" />
+    <copy file="dayuan.atom.add.xml" />
+    <copy file="dayuan.atom.sumo.cfg" type="config" />
 </launch>
 
