@@ -32,10 +32,17 @@
 -->
 
 <!-- debug config -->
+<!-- try new route file
 <launch>
     <copy file="erlangen.net.xml" />
     <copy file="erlangen.rou.xml" />
     <copy file="erlangen.poly.xml" />
     <copy file="erlangen.sumo.cfg" type="config" />
 </launch>
-
+-->
+<launch>
+    <copy file="erlangen.net.xml" />
+    <copy file="dayuan.erlangen.rou.xml" />
+    <copy file="erlangen.poly.xml" />
+    <copy file="erlangen.sumo.cfg" type="config" />
+</launch>
