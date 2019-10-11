@@ -2,7 +2,7 @@
 
 Try to modity VEINS files to learn it and build my project.
 
-## Replace SUMO files. 
+## Replace SUMO files (failed). 
 
 I replaced sumo related files. 
 ```
@@ -17,7 +17,7 @@ Failed. See [files](./examples/veins_sumofail/)
 
 ## Just change vehicles routes.
 
-Generate a new route file using original erlangen Uinv's net file. Then we changed "erlangen.sumo.cfg" to use the new route file.
+Generate a new route file using **original erlangen Uinv's net file**. Then we changed **"erlangen.sumo.cfg"** and **"erlangen.launchd.xml"** to use the new route file.
 ```linux
 $/usr/local/opt/sumo/share/sumo/tools/randomTrips.py -n erlangen.net.xml -o dayuan.erlangen.trips.xml  --route-file dayuan.erlangen.rou.xml -p 3 --begin 0 --end 1000 --fringe-factor 0
 calling  /usr/local/opt/sumo/share/sumo/bin/duarouter -n erlangen.net.xml -r dayuan.erlangen.trips.xml --ignore-errors --begin 0 --end 3600 --no-step-log --no-warnings -o dayuan.erlangen.rou.xml
@@ -48,7 +48,7 @@ Launch a debugger with the following command?
 
 nemiver --attach=15907 &
 ```
-Check it carefully I found some nodes went outside of the map so I changed omnetpp.ini file to make the playground bigger (from 2500x2500x50 to 2600x2500x50).
+Check it carefully I found some nodes went outside of the map so I changed "omnetpp.ini" file to make the playground bigger (from 2500x2500x50 to 2600x2500x50).
 
 <!--<vehicle id="24" depart="72.00">
         <route edges="-8403007 -29900564#1 -8402998#2 -8402998#1 -8402997 32270595 33174302#0 33174302#1 4686970#0 4686970#1 122161381 30350448 8364476 30350450#0 30350450#1 30350450#2 4006702#0 31255203#0 31255203#1 -31255203#1"/>
@@ -62,3 +62,7 @@ Check it carefully I found some nodes went outside of the map so I changed omnet
     <!--<vehicle id="58" depart="174.00">
         <route edges="44069041#0 44069041#1 4400949 31982182#0 4047241 4797872 4797871 4006668 23339459"/>
     </vehicle>-->
+
+## Change the net file.
+
+Use Sookyoung's net file **net-file value="b4atom.net.xml"**.
