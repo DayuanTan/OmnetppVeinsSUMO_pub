@@ -65,4 +65,10 @@ Check it carefully I found some nodes went outside of the map so I changed "omne
 
 ## Change the net file.
 
-Use Sookyoung's net file **net-file value="b4atom.net.xml"**.
+Use Sookyoung's net file **net-file value="b4atom.net.xml"**,
+**route-files value="dua.rou.xml"**,
+**additional-files value="dayuan.atom.add.xml"**.
+
+Change **"erlangen.sumo.cfg"** and **"erlangen.launchd.xml"** to use the new net, route  and add files.
+
+Tried `sumo-gui -c erlangen.sumo.cfg` it works well.
