@@ -100,7 +100,7 @@ nemiver --attach=25266 &
 
 So I decide to add an obstacle as the example did. I found in the config.xml file the obstacle is building. But Sookyoung's net file doesn't have ploy.xml which defines building. So I generate a new net file of DC downtown area. 
 
-## 4. Change to use DC downtown net file.
+## 4. Change to use DC downtown net file (**Succeeded**).
 
 Firstly I need to generate the DC downtown net file, poly file, route file. See [the record here](https://github.com/DayuanTan/SUMO_dy_public/blob/master/dayuan/generate2_DCdowntown.md).
 
@@ -112,3 +112,7 @@ Change files:
 **additional-files value="dcDowntown.poly.xml"**.
 
 Change **"erlangen.sumo.cfg"** and **"erlangen.launchd.xml"** to use the new net, route  and add files.
+
+Change palyground form 2500x2500x50 to 15000x20000x50 and sim-time-limit = 1000s in omnetpp.ini.
+
+It works well.
