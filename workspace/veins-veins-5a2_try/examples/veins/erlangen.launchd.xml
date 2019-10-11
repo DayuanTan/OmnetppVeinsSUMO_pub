@@ -32,7 +32,7 @@
 -->
 
 <!-- debug config -->
-<!-- try new route file
+<!--
 <launch>
     <copy file="erlangen.net.xml" />
     <copy file="erlangen.rou.xml" />
@@ -41,9 +41,9 @@
 </launch>
 -->
 <launch>
-    <copy file="b4atom.net.xml" />
-    <copy file="dua.rou.xml" />
-    
-    <copy file="dayuan.atom.add.xml"/>
+    <copy file="dcDowntown.net.xml" />
+    <copy file="dcDowntown.rou.xml" />
+    <copy file="dcDowntown.poly.xml" />
     <copy file="erlangen.sumo.cfg" type="config" />
 </launch>
+

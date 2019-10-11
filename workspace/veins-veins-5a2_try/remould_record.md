@@ -2,7 +2,7 @@
 
 Try to modity VEINS files to learn it and build my project.
 
-## Replace SUMO files (failed). 
+## 1. Replace SUMO files (**failed**). 
 
 I replaced sumo related files. 
 ```
@@ -15,7 +15,7 @@ I replaced sumo related files.
 
 Failed. See [files](./examples/veins_sumofail/)
 
-## Just change vehicles routes.
+## 2. Just change vehicles routes (**Succeeded**).
 
 Generate a new route file using **original erlangen Uinv's net file**. Then we changed **"erlangen.sumo.cfg"** and **"erlangen.launchd.xml"** to use the new route file.
 ```linux
@@ -38,7 +38,7 @@ $ll
 
 Tried `sumo-gui -c erlangen.sumo.cfg` it works well.
 
-Then I met an error:
+Then I met an ***error*** in VEINS:
 ```
 A runtime error occurred:
 
@@ -63,7 +63,7 @@ Check it carefully I found some nodes went outside of the map so I changed "omne
         <route edges="44069041#0 44069041#1 4400949 31982182#0 4047241 4797872 4797871 4006668 23339459"/>
     </vehicle>-->
 
-## Change the net file.
+## 3. Change to use Sookyoung's net file (**Failed**).
 
 Use Sookyoung's net file **net-file value="b4atom.net.xml"**,
 **route-files value="dua.rou.xml"**,
@@ -72,3 +72,43 @@ Use Sookyoung's net file **net-file value="b4atom.net.xml"**,
 Change **"erlangen.sumo.cfg"** and **"erlangen.launchd.xml"** to use the new net, route  and add files.
 
 Tried `sumo-gui -c erlangen.sumo.cfg` it works well.
+
+***Error***:
+
+```
+A runtime error occurred:
+
+Unable to use SimpleObstacleShadowing: No obstacles have been added -- in module (veins::ObstacleControl) RSUExampleScenario.obstacles (id=2), at t=25.000010128969s, event #31
+
+Launch a debugger with the following command?
+
+nemiver --attach=25855 &
+```
+
+
+At first I tried to comment/delete obstacle config in omnetpp.ini but it doesn't work. "veins::PhyLayer80211p" uses it. So cannot remove it directly. 
+
+```
+A runtime error occurred:
+
+initializeSimpleObstacleShadowing(): cannot find ObstacleControl module -- in module (veins::PhyLayer80211p) RSUExampleScenario.rsu[0].nic.phy80211p (id=10), during network initialization
+
+Launch a debugger with the following command?
+
+nemiver --attach=25266 &
+```
+
+So I decide to add an obstacle as the example did. I found in the config.xml file the obstacle is building. But Sookyoung's net file doesn't have ploy.xml which defines building. So I generate a new net file of DC downtown area. 
+
+## 4. Change to use DC downtown net file.
+
+Firstly I need to generate the DC downtown net file, poly file, route file. See [the record here](https://github.com/DayuanTan/SUMO_dy_public/blob/master/dayuan/generate2_DCdowntown.md).
+
+Change files:
+**net-file value="dcDowntown.net.xml"**,
+
+**route-files value="dcDowntown.rou.xml"**,
+
+**additional-files value="dcDowntown.poly.xml"**.
+
+Change **"erlangen.sumo.cfg"** and **"erlangen.launchd.xml"** to use the new net, route  and add files.
