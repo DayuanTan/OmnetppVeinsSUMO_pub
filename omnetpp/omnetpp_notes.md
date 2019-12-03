@@ -10,7 +10,7 @@
 
 ![](./notes_img/simple_modules.png)
 
-## Omnetpp Tictoc project consists of components. 
+## Omnetpp (Tictoc) project consists of components: 
 - Network Description File (NED)
   - module type ***simple*** "Txc1"-- atomic on NED level 
   - module type ***network*** "TicToc1"
