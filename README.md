@@ -18,3 +18,9 @@ I don't think the official install instruction is good, readable. It's kind of c
 ## Understand Veins's example program
 
 ## [Remould](./workspace/veins-veins-5a2_dyt/remould_record.md) 
+
+*veins-veins-5a2_dyt3_workwithRemould.zip* is the back up file. 
+
+## [How to run Veins subproject examples?](./omnetpp/how2runsubproject.md)
+
+
