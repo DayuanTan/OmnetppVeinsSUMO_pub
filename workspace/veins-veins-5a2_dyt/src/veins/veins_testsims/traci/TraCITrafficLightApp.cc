@@ -20,7 +20,7 @@
 // Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 //
 
-#include "veins_testsims/traci/TraCITrafficLightApp.h"
+#include "veins/veins_testsims/traci/TraCITrafficLightApp.h"
 
 #include "veins/modules/messages/DemoSafetyMessage_m.h"
 

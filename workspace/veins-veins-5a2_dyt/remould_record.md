@@ -13,7 +13,7 @@ I replaced sumo related files.
         Changed erlangen.launchd.xml
 ```
 
-Failed. See [files](./examples/veins_sumofail/)
+Failed. See [files](./examples/veins_1sumofail/)
 
 ## 2. Just change vehicles routes (**Succeeded**).
 
@@ -97,6 +97,7 @@ Launch a debugger with the following command?
 
 nemiver --attach=25266 &
 ```
+Failed [files](./examples/veins_3obstacleFail/)
 
 So I decide to add an obstacle as the example did. I found in the config.xml file the obstacle is building. But Sookyoung's net file doesn't have ploy.xml which defines building. So I generate a new net file of DC downtown area. 
 

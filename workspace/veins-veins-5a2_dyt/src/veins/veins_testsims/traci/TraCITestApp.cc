@@ -22,11 +22,11 @@
 
 #include <algorithm>
 
-#include "veins_testsims/traci/TraCITestApp.h"
+#include "veins/veins_testsims/traci/TraCITestApp.h"
 
-#include "veins_testsims/utils/asserts.h"
+#include "veins/veins_testsims/utils/asserts.h"
 #include "veins/modules/mobility/traci/TraCIColor.h"
-#include "veins_testsims/traci/TraCITrafficLightTestLogic.h"
+#include "veins/veins_testsims/traci/TraCITrafficLightTestLogic.h"
 
 using veins::BaseMobility;
 using veins::TraCIMobility;
