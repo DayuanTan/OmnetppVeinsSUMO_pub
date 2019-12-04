@@ -8,16 +8,16 @@ Then leant some basic knowledge about [SUMO (learn here)](https://github.com/Day
 
 ## [Install Veins](InstallVeins.md):
 
-I don't think the official install instruction is good, readable. It's kind of confusing. I suggest to do it following the [instructions](InstallVeins.md).
+I don't think the official install instruction is good, readable. It's kind of confusing. I suggest to do it following the [instructions](./omnetpp/InstallVeins.md).
 
 
 ## Run Veins:
 
-` ./sumo-launchd.py -vv -c sumo` (Refer to [complete steps.](InstallVeins.md))
+` ./sumo-launchd.py -vv -c sumo` (Refer to [complete steps.](./omnetpp/InstallVeins.md))
 
 ## Understand Veins's example program
 
-## [Remould](./workspace/veins-veins-5a2_dyt/remould_record.md) 
+## [Remould](./omnetpp/remould_record.md) 
 
 *veins-veins-5a2_dyt3_workwithRemould.zip* is the back up file. 
 
