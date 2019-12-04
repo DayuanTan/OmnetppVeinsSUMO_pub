@@ -6,7 +6,7 @@ Install [SUMO](https://github.com/DayuanTan/SUMO_dy_public), OmNet++ and Veins r
 
 Then leant some basic knowledge about [SUMO (learn here)](https://github.com/DayuanTan/SUMO_dy_public) and [OmNet++ (learn here)](./omnetpp/omnetpp_notes.md) before you start Veins. 
 
-## [Install Veins](InstallVeins.md):
+## [Install Veins](./omnetpp/InstallVeins.md):
 
 I don't think the official install instruction is good, readable. It's kind of confusing. I suggest to do it following the [instructions](./omnetpp/InstallVeins.md).
 
